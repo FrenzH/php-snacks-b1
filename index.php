@@ -219,4 +219,54 @@ $array = explode('.',$paragraph);
 
 
 
+<?php
 
+// SNACK 5
+
+$class=[
+    ['name'=>'Mark',
+     'last-name'=>'Kilpatrick',
+     'votes'=>[5,8,9,6,7,7]
+    ],
+    ['name'=>'Kristine',
+     'last-name'=>'Rose',
+     'votes'=>[4,6,8,5,6,6]
+    ],
+    ['name'=>'John',
+     'last-name'=>'Paul',
+     'votes'=>[8,8,6,6,7,7]
+    ],
+    
+
+];
+
+?>
+
+<div>
+    <h1>SNACK 5</h1>
+</div>
+
+
+
+
+
+<?php
+
+foreach($class as $student){
+    
+    $average=array_sum($student['votes']) /count($student['votes']);
+   
+   
+?>
+<div>
+    
+    <h2><?=$student['name'] .' ' . $student['last-name']?></h2>
+    <p><?= 'average' . ' ' .round($average,2)?></p>
+
+</div>
+
+
+
+<?php
+}
+?>
