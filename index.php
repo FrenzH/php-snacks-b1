@@ -169,10 +169,6 @@ $posts = [
 <?php
 
 
-
-
-//$postsKey=array_keys($posts);
-
 foreach($posts as $key=>$value){
 
 ?>
@@ -182,41 +178,16 @@ foreach($posts as $key=>$value){
 </div>  
 
  <?php
-
-
-
-   
-
-   
-     
-      
-        foreach($value as $data){
-         
-        
-        
-        
     
+        foreach($value as $data){
         
 ?>
-
-
     
     <ul>
         <li><?= $data['title']?></li>
         <li><?= $data['author']?></li>
         <li><?= $data['text']?></li>
     </ul>
-
-
-
-
-
-
-
-
-
-
-
 
 <?php
         }
