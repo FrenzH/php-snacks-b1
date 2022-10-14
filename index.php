@@ -194,3 +194,29 @@ foreach($posts as $key=>$value){
     }
 
 ?>
+
+
+<?php
+
+// SNACK 4
+
+$paragraph='Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum accusantium debitis expedita, rem facere quas cumque quasi culpa atque, laborum vel illum corporis nesciunt ea nisi ratione ex dolorem obcaecati.';
+
+$array = explode('.',$paragraph);
+
+
+
+?>
+<div>
+    <h1>
+        SNACK 4
+    </h1>
+    <p><?= $paragraph?></p>
+    <h2>New paragraphs :</h2>
+    <p><?=$array[0]?></p>
+    <p><?= $array[1]?></p>
+</div>
+
+
+
+
